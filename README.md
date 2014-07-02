@@ -1,50 +1,50 @@
-Ç°¶ËÓëºó¶Ë½áºÏ¿ò¼Ü
+å‰ç«¯ä¸åç«¯ç»“åˆæ¡†æ¶
 ===========================
 
-> ¼¯³ÉÁË¾²Ì¬×ÊÔ´¹ÜÀíÏµÍ³£¬ÊÊºÏphp Ci
+> é›†æˆäº†é™æ€èµ„æºç®¡ç†ç³»ç»Ÿï¼Œé€‚åˆphp Ci
 
-## »·¾³ÒÀÀµ£º
+## ç¯å¢ƒä¾èµ–ï¼š
 
 1. npm install -g fis
 2. npm install -g fis-pure
-3. °²×°PHP»·¾³£¨ÀıÈçxampp£©
-	ÀıÈç£ºE:\xampp
-	½øÈëE:\xampp\apache\conf\extra Ôö¼ÓĞĞ d:\public_test (´ËÎª·¢²¼²âÊÔÂ·¾¶)
-    ÉèÖÃhost
+3. å®‰è£…PHPç¯å¢ƒï¼ˆä¾‹å¦‚xamppï¼‰
+	ä¾‹å¦‚ï¼šE:\xampp
+	è¿›å…¥E:\xampp\apache\conf\extra å¢åŠ è¡Œ d:\public_test (æ­¤ä¸ºå‘å¸ƒæµ‹è¯•è·¯å¾„)
+    è®¾ç½®host
 	127.0.0.1	pt.detu.cc
 	
-	
-<VirtualHost *:80>
-    DocumentRoot "D:/public_test/"
-    ServerName pt.detu.com
-    ErrorLog "logs/dummy-host.localhost-error.log"
-    CustomLog "logs/dummy-host.localhost-access.log" combined
-	<Directory "D:/public_test/">
-        AllowOverride All
-        Order Allow,Deny
-        Allow from all
-    </Directory>
-</VirtualHost>
+>
+	<VirtualHost *:80>
+		DocumentRoot "D:/public_test/"
+		ServerName pt.detu.com
+		ErrorLog "logs/dummy-host.localhost-error.log"
+		CustomLog "logs/dummy-host.localhost-access.log" combined
+		<Directory "D:/public_test/">
+			AllowOverride All
+			Order Allow,Deny
+			Allow from all
+		</Directory>
+	</VirtualHost>
 
 
 
-## ÔËĞĞ·½·¨£º
+## è¿è¡Œæ–¹æ³•ï¼š
 
-1. Æô¶¯ÄÚÖÃ·şÎñÆ÷
+1. å¯åŠ¨å†…ç½®æœåŠ¡å™¨
     * fis server start
-1. ½øÈëÏîÄ¿Ä¿Â¼
+1. è¿›å…¥é¡¹ç›®ç›®å½•
     * cd project
-1. ¹¹½¨ÏîÄ¿
-    * Ô¤ÀÀ¿ª·¢Ğ§¹ûÃüÁî£º ``pure release -d D:/public_test/``
-    * Ô¤ÀÀ¿ª·¢Ğ§¹û£¬²¢¼àÌıÎÄ¼ş±ä»¯ÃüÁî£º ``pure release -w -d D:/public_test/``
-´ò¿ªpt.detu.cc¿´Ğ§¹û
+1. æ„å»ºé¡¹ç›®
+    * é¢„è§ˆå¼€å‘æ•ˆæœå‘½ä»¤ï¼š ``pure release -d D:/public_test/``
+    * é¢„è§ˆå¼€å‘æ•ˆæœï¼Œå¹¶ç›‘å¬æ–‡ä»¶å˜åŒ–å‘½ä»¤ï¼š ``pure release -w -d D:/public_test/``
+æ‰“å¼€pt.detu.ccçœ‹æ•ˆæœ
 
-##·ÃÎÊ²âÊÔ
-  cÎª¿ØÖÆÆ÷×ÊÔ´¶¨Î»²ÎÊı
+##è®¿é—®æµ‹è¯•
+  cä¸ºæ§åˆ¶å™¨èµ„æºå®šä½å‚æ•°
 http://pt.detu.cc/index.php?c=index
- ¶ÔÓ¦µÄÊı¾İÄ¿Â¼Îª
+ å¯¹åº”çš„æ•°æ®ç›®å½•ä¸º
  /php-test-data/index_data.php
-  ¶ÔÓ¦µÄÒ³ÃæÎª
+  å¯¹åº”çš„é¡µé¢ä¸º
  /views/index.php
  
  
