@@ -48,7 +48,7 @@ http://pt.detu.cc/index.php?c=index
  /views/index.php
  
  
- ## 如何与CI框架集成
+##如何与CI框架集成
 
 前端工程师就独立去完成CI模版的修改与调试了。
 
@@ -68,17 +68,8 @@ http://pt.detu.cc/index.php?c=index
     system
 	index.php
 	
-2.前端集成框架生成的目录结构如下
 
->
-	 appliction
-	 php-test-data
-	 static
-	 index.php
-	 map.json
-
-
-3.简单模拟CI框架行为
+2.简单模拟CI框架行为
 	
 	a.CI页面
 	
@@ -126,6 +117,15 @@ http://pt.detu.cc/index.php?c=index
 
 		这样就在前端工程里面完成了CI框架的模拟
 		 　　 http://pt.detu.cc/index.php?c=login
+
+3.前端集成框架生成的目录结构如下
+
+>
+	 appliction
+	 php-test-data
+	 static
+	 index.php
+	 map.json
 
 
 **调试完成后只要将application目录与static目录复制到CI框架的根目录下即可**
